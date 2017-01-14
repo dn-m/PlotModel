@@ -1,0 +1,636 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00FF34CB029F4712369FF7FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4D19EA433F9C45F89E0ABA /* Foundation.framework */; };
+		01235498B63E77822E436EB3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC92FD219D2808CC71B2B463 /* Cocoa.framework */; };
+		954443255095C57ED971857D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC92FD219D2808CC71B2B463 /* Cocoa.framework */; };
+		A56A122F9A421D72D5A1AB34 /* PlotModel.h in Headers */ = {isa = PBXBuildFile; fileRef = E1BA847940B83162F5FB14E8 /* PlotModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA0DB1A6B7D537A772F24272 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4D19EA433F9C45F89E0ABA /* Foundation.framework */; };
+		F6DF5A00D458AD2B36A762B0 /* PlotModel.h in Headers */ = {isa = PBXBuildFile; fileRef = E1BA847940B83162F5FB14E8 /* PlotModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3CD2191EAB7B148DB5C7A21B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B273A5B169F559F8C013A84 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4D143BB8F82B657B438FC48;
+			remoteInfo = "PlotModel macOS";
+		};
+		CCCC74DE4CC66FDAF8D3688F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B273A5B169F559F8C013A84 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B961475A995F6564AD04761;
+			remoteInfo = "PlotModel iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07F1779AFF93AFB8A561F67C /* PlotModel macOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PlotModel macOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		211DE3C772C1D0863573B35B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = PlotModel/Info.plist; sourceTree = "<group>"; };
+		3A4D19EA433F9C45F89E0ABA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		63A56859FEE30A286CABDA23 /* PlotModel iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "PlotModel iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F245F55CD6C94B6108F65E7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = PlotModelTests/Info.plist; sourceTree = "<group>"; };
+		8B4DD33294D828AB5D473F13 /* PlotModel macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "PlotModel macOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC92FD219D2808CC71B2B463 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		E1BA847940B83162F5FB14E8 /* PlotModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PlotModel.h; path = PlotModel/PlotModel.h; sourceTree = "<group>"; };
+		E363DC790C37D51CE0ADB434 /* PlotModel iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PlotModel iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		477ECC28C0522B305BFEC4C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA0DB1A6B7D537A772F24272 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6349886B0EE6C773439F4A4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01235498B63E77822E436EB3 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEBE29028987CD0F124DEDD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00FF34CB029F4712369FF7FF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDFEC4980236A769AFD7A0E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				954443255095C57ED971857D /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3640263183D6206E7B62A256 /* PlotModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				86A188A4FC544754AC4987DA /* Supporting Files */,
+			);
+			name = PlotModelTests;
+			sourceTree = "<group>";
+		};
+		36B783F70B11C75156A4BB3A /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				AC92FD219D2808CC71B2B463 /* Cocoa.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		81AB31ACCE1BCCD8B33B1130 /* PlotModel */ = {
+			isa = PBXGroup;
+			children = (
+				F0B368DCA1EF92366B80385B /* Supporting Files */,
+			);
+			name = PlotModel;
+			sourceTree = "<group>";
+		};
+		84102D7D98556F3B534DED72 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3A4D19EA433F9C45F89E0ABA /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		86A188A4FC544754AC4987DA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6F245F55CD6C94B6108F65E7 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		91863811D27D28698722C8F4 = {
+			isa = PBXGroup;
+			children = (
+				D7C10B068B154E37FAF795C7 /* Products */,
+				D00B2887512F134520A06FDA /* Frameworks */,
+				81AB31ACCE1BCCD8B33B1130 /* PlotModel */,
+				3640263183D6206E7B62A256 /* PlotModelTests */,
+				E1BA847940B83162F5FB14E8 /* PlotModel.h */,
+			);
+			sourceTree = "<group>";
+		};
+		D00B2887512F134520A06FDA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84102D7D98556F3B534DED72 /* iOS */,
+				36B783F70B11C75156A4BB3A /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D7C10B068B154E37FAF795C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63A56859FEE30A286CABDA23 /* PlotModel iOS.framework */,
+				E363DC790C37D51CE0ADB434 /* PlotModel iOS Tests.xctest */,
+				8B4DD33294D828AB5D473F13 /* PlotModel macOS.framework */,
+				07F1779AFF93AFB8A561F67C /* PlotModel macOS Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F0B368DCA1EF92366B80385B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				211DE3C772C1D0863573B35B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4BC4E0DA234924475F3692D8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A56A122F9A421D72D5A1AB34 /* PlotModel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF00DE0E2F48F8E335E1D234 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6DF5A00D458AD2B36A762B0 /* PlotModel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2B961475A995F6564AD04761 /* PlotModel iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AF467E84FD3C581606654C0 /* Build configuration list for PBXNativeTarget "PlotModel iOS" */;
+			buildPhases = (
+				FE28CACA24BA67F17367CF3C /* Sources */,
+				477ECC28C0522B305BFEC4C7 /* Frameworks */,
+				4BC4E0DA234924475F3692D8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PlotModel iOS";
+			productName = "PlotModel iOS";
+			productReference = 63A56859FEE30A286CABDA23 /* PlotModel iOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		36A16952A5E8433CE8EAEE32 /* PlotModel iOS Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDE2AB6BDE41A2A4A43F2E6D /* Build configuration list for PBXNativeTarget "PlotModel iOS Tests" */;
+			buildPhases = (
+				0E9F6EABFA89809496333252 /* Sources */,
+				BEBE29028987CD0F124DEDD5 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE5E4140181907284D3345F1 /* PBXTargetDependency */,
+			);
+			name = "PlotModel iOS Tests";
+			productName = "PlotModel iOS Tests";
+			productReference = E363DC790C37D51CE0ADB434 /* PlotModel iOS Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		73BD0564CB742421488A2EFA /* PlotModel macOS Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B61F66A3A07793C096729D9 /* Build configuration list for PBXNativeTarget "PlotModel macOS Tests" */;
+			buildPhases = (
+				72D715601C65256612F67EF1 /* Sources */,
+				DDFEC4980236A769AFD7A0E9 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				983B569A214B598D2EB50EFC /* PBXTargetDependency */,
+			);
+			name = "PlotModel macOS Tests";
+			productName = "PlotModel macOS Tests";
+			productReference = 07F1779AFF93AFB8A561F67C /* PlotModel macOS Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C4D143BB8F82B657B438FC48 /* PlotModel macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1157E04EDAD34EBCD7E1AC4 /* Build configuration list for PBXNativeTarget "PlotModel macOS" */;
+			buildPhases = (
+				D522FC106C4A5FAC125A2BA6 /* Sources */,
+				6349886B0EE6C773439F4A4F /* Frameworks */,
+				BF00DE0E2F48F8E335E1D234 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PlotModel macOS";
+			productName = "PlotModel macOS";
+			productReference = 8B4DD33294D828AB5D473F13 /* PlotModel macOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8B273A5B169F559F8C013A84 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 0D41C9B1D55BCF74B1BE07F6 /* Build configuration list for PBXProject "PlotModel" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 91863811D27D28698722C8F4;
+			productRefGroup = D7C10B068B154E37FAF795C7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2B961475A995F6564AD04761 /* PlotModel iOS */,
+				36A16952A5E8433CE8EAEE32 /* PlotModel iOS Tests */,
+				C4D143BB8F82B657B438FC48 /* PlotModel macOS */,
+				73BD0564CB742421488A2EFA /* PlotModel macOS Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0E9F6EABFA89809496333252 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72D715601C65256612F67EF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D522FC106C4A5FAC125A2BA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE28CACA24BA67F17367CF3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		983B569A214B598D2EB50EFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "PlotModel macOS";
+			target = C4D143BB8F82B657B438FC48 /* PlotModel macOS */;
+			targetProxy = 3CD2191EAB7B148DB5C7A21B /* PBXContainerItemProxy */;
+		};
+		FE5E4140181907284D3345F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "PlotModel iOS";
+			target = 2B961475A995F6564AD04761 /* PlotModel iOS */;
+			targetProxy = CCCC74DE4CC66FDAF8D3688F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0DDDAB66F28C289072B8AC91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = PlotModel/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dn-m.PlotModel";
+				PRODUCT_NAME = PlotModel;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		41560EA1D0248D84261A9EC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = PlotModelTests/Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		57B90AEABBB6440C534421A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = PlotModel/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dn-m.PlotModel";
+				PRODUCT_NAME = PlotModel;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6939F63EC8A65DA318057233 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = PlotModelTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		77F07A2DB63FDCF4A7053463 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD99ADB832D9DC7ACE71421D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Debug;
+		};
+		DC501F61924E0676FAB6BB42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = PlotModelTests/Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E263959CEB02B2BF693D99FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = PlotModelTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		ECCCA00427E7F54CBE6549D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = PlotModel/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dn-m.PlotModel";
+				PRODUCT_NAME = PlotModel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F21B8A6E1A6C5B3176EEF0AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = PlotModel/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dn-m.PlotModel";
+				PRODUCT_NAME = PlotModel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0D41C9B1D55BCF74B1BE07F6 /* Build configuration list for PBXProject "PlotModel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD99ADB832D9DC7ACE71421D /* Debug */,
+				77F07A2DB63FDCF4A7053463 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B61F66A3A07793C096729D9 /* Build configuration list for PBXNativeTarget "PlotModel macOS Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC501F61924E0676FAB6BB42 /* Release */,
+				41560EA1D0248D84261A9EC5 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AF467E84FD3C581606654C0 /* Build configuration list for PBXNativeTarget "PlotModel iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECCCA00427E7F54CBE6549D2 /* Release */,
+				F21B8A6E1A6C5B3176EEF0AF /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1157E04EDAD34EBCD7E1AC4 /* Build configuration list for PBXNativeTarget "PlotModel macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57B90AEABBB6440C534421A4 /* Release */,
+				0DDDAB66F28C289072B8AC91 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDE2AB6BDE41A2A4A43F2E6D /* Build configuration list for PBXNativeTarget "PlotModel iOS Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6939F63EC8A65DA318057233 /* Release */,
+				E263959CEB02B2BF693D99FC /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8B273A5B169F559F8C013A84 /* Project object */;
+}
