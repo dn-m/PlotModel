@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		00FF34CB029F4712369FF7FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4D19EA433F9C45F89E0ABA /* Foundation.framework */; };
 		01235498B63E77822E436EB3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC92FD219D2808CC71B2B463 /* Cocoa.framework */; };
+		075303E61E2AAB1B00457EAD /* PlotModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075303E51E2AAB1B00457EAD /* PlotModel.swift */; };
+		075303E71E2AAB1B00457EAD /* PlotModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075303E51E2AAB1B00457EAD /* PlotModel.swift */; };
+		075303E91E2AAB3B00457EAD /* Axis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075303E81E2AAB3B00457EAD /* Axis.swift */; };
+		075303EA1E2AAB3B00457EAD /* Axis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075303E81E2AAB3B00457EAD /* Axis.swift */; };
 		954443255095C57ED971857D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC92FD219D2808CC71B2B463 /* Cocoa.framework */; };
 		A56A122F9A421D72D5A1AB34 /* PlotModel.h in Headers */ = {isa = PBXBuildFile; fileRef = E1BA847940B83162F5FB14E8 /* PlotModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BA0DB1A6B7D537A772F24272 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4D19EA433F9C45F89E0ABA /* Foundation.framework */; };
@@ -33,12 +37,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		075303E51E2AAB1B00457EAD /* PlotModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlotModel.swift; path = PlotModel/PlotModel.swift; sourceTree = "<group>"; };
+		075303E81E2AAB3B00457EAD /* Axis.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Axis.swift; path = PlotModel/Axis.swift; sourceTree = "<group>"; };
 		07F1779AFF93AFB8A561F67C /* PlotModel macOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PlotModel macOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		211DE3C772C1D0863573B35B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = PlotModel/Info.plist; sourceTree = "<group>"; };
 		3A4D19EA433F9C45F89E0ABA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		63A56859FEE30A286CABDA23 /* PlotModel iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "PlotModel iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		63A56859FEE30A286CABDA23 /* PlotModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PlotModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F245F55CD6C94B6108F65E7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = PlotModelTests/Info.plist; sourceTree = "<group>"; };
-		8B4DD33294D828AB5D473F13 /* PlotModel macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "PlotModel macOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B4DD33294D828AB5D473F13 /* PlotModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PlotModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC92FD219D2808CC71B2B463 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		E1BA847940B83162F5FB14E8 /* PlotModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PlotModel.h; path = PlotModel/PlotModel.h; sourceTree = "<group>"; };
 		E363DC790C37D51CE0ADB434 /* PlotModel iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PlotModel iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +106,8 @@
 			isa = PBXGroup;
 			children = (
 				F0B368DCA1EF92366B80385B /* Supporting Files */,
+				075303E51E2AAB1B00457EAD /* PlotModel.swift */,
+				075303E81E2AAB3B00457EAD /* Axis.swift */,
 			);
 			name = PlotModel;
 			sourceTree = "<group>";
@@ -143,9 +151,9 @@
 		D7C10B068B154E37FAF795C7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				63A56859FEE30A286CABDA23 /* PlotModel iOS.framework */,
+				63A56859FEE30A286CABDA23 /* PlotModel.framework */,
 				E363DC790C37D51CE0ADB434 /* PlotModel iOS Tests.xctest */,
-				8B4DD33294D828AB5D473F13 /* PlotModel macOS.framework */,
+				8B4DD33294D828AB5D473F13 /* PlotModel.framework */,
 				07F1779AFF93AFB8A561F67C /* PlotModel macOS Tests.xctest */,
 			);
 			name = Products;
@@ -195,7 +203,7 @@
 			);
 			name = "PlotModel iOS";
 			productName = "PlotModel iOS";
-			productReference = 63A56859FEE30A286CABDA23 /* PlotModel iOS.framework */;
+			productReference = 63A56859FEE30A286CABDA23 /* PlotModel.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		36A16952A5E8433CE8EAEE32 /* PlotModel iOS Tests */ = {
@@ -246,7 +254,7 @@
 			);
 			name = "PlotModel macOS";
 			productName = "PlotModel macOS";
-			productReference = 8B4DD33294D828AB5D473F13 /* PlotModel macOS.framework */;
+			productReference = 8B4DD33294D828AB5D473F13 /* PlotModel.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -257,6 +265,14 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					2B961475A995F6564AD04761 = {
+						LastSwiftMigration = 0820;
+					};
+					C4D143BB8F82B657B438FC48 = {
+						LastSwiftMigration = 0820;
+					};
+				};
 			};
 			buildConfigurationList = 0D41C9B1D55BCF74B1BE07F6 /* Build configuration list for PBXProject "PlotModel" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -297,6 +313,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				075303EA1E2AAB3B00457EAD /* Axis.swift in Sources */,
+				075303E71E2AAB1B00457EAD /* PlotModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +322,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				075303E91E2AAB3B00457EAD /* Axis.swift in Sources */,
+				075303E61E2AAB1B00457EAD /* PlotModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +349,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -350,6 +371,8 @@
 				PRODUCT_NAME = PlotModel;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -358,6 +381,7 @@
 		41560EA1D0248D84261A9EC5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -374,6 +398,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -395,6 +420,7 @@
 				PRODUCT_NAME = PlotModel;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -403,6 +429,7 @@
 		6939F63EC8A65DA318057233 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -499,6 +526,7 @@
 		DC501F61924E0676FAB6BB42 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -514,6 +542,7 @@
 		E263959CEB02B2BF693D99FC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -530,6 +559,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -548,6 +578,7 @@
 				PRODUCT_NAME = PlotModel;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -558,6 +589,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -576,6 +608,8 @@
 				PRODUCT_NAME = PlotModel;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
