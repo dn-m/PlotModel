@@ -8,5 +8,5 @@
 
 
 public protocol VerticalPlotModel: PlotModel {
-    associatedtype VerticalAxis = DefaultAxis<Double>
+    var verticalAxis: DefaultAxis<Double> { get }
 }
