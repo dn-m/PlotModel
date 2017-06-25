@@ -21,9 +21,17 @@ public protocol PointModel {
     /// Type that describes the abstract horizontal coordinate system of a `PlotView`.
     associatedtype HorizontalCoordinate
     
+    /// Type that converts a given type of musical element to `AbstractVerticalPosition`.
+    associatedtype VerticalAxis: Axis
+    
+    /// Type that converts a given type of musical element to `AbstractHorizontalPosition`.
+    associatedtype HorizontalAxis: Axis
+    
     /// Symbolic connection point for stems.
-    func stemConnectionPoint(from direction: VerticalDirection) -> VerticalCoordinate
+    func stemConnectionPoint(from direction: VerticalDirection, axis: VerticalAxis)
+        -> VerticalCoordinate?
     
     /// Symbolic connection point for slurs.
-    func slurConnectionPoint(from direction: VerticalDirection) -> VerticalCoordinate
+    func slurConnectionPoint(from direction: VerticalDirection, axis: VerticalAxis)
+        -> VerticalCoordinate?
 }
