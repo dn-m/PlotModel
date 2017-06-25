@@ -6,10 +6,15 @@
 //
 //
 
+import Collections
+
 /// Model represented by a `PlotView`.
-public protocol PlotModel {
+public protocol PlotModel: AnyCollectionWrapping {
+
+    /// Model of a single point within a `PlotModel`.
+    associatedtype Point: PointModel
     
-    /// The thing the needs to be converted into vertical dimension
+    /// The thing the needs to be converted into vertical dimension.
     associatedtype Entity
     
     /// Type that describes the abstract vertical coordinate system of a `PlotView`.
@@ -31,4 +36,18 @@ public protocol PlotModel {
     
     /// Determines the way that information is mapped onto the horizontal axis.
     var horizontalAxis: HorizontalAxis { get }
+    
+    /// Array of points contained herein.
+    var points: [Point] { get }
+    
+    /// Type-erased view of `points` array.
+    var collection: AnyCollection<Point> { get }
+}
+
+extension PlotModel {
+    
+    /// Type-erased view of `points` array.
+    public var collection: AnyCollection<Point> {
+        return AnyCollection(points)
+    }
 }
