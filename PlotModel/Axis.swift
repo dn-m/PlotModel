@@ -24,4 +24,7 @@ public struct DefaultAxis <T> {
     
     /// - Returns: Element as coordinate.
     public var coordinate: (T) -> T = { t in t }
+    
+    /// Create a `DefaultAxis`.
+    public init() { }
 }
