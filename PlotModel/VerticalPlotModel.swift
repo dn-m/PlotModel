@@ -8,5 +8,5 @@
 
 
 public protocol VerticalPlotModel: PlotModel {
-    var verticalAxis: DefaultAxis<Double> { get }
+    var horizontalAxis: DefaultAxis<Double> { get }
 }

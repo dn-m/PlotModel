@@ -7,5 +7,5 @@
 //
 
 public protocol HorizontalPlotModel: PlotModel {
-    var horizontalAxis: DefaultAxis<Double> { get }
+    var verticalAxis: DefaultAxis<Double> { get }
 }
