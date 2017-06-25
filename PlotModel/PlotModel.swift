@@ -44,7 +44,7 @@ public protocol PlotModel: AnyCollectionWrapping {
     var points: [Position: [Point]] { get }
     
     /// Type-erased view of `points` array.
-    var collection: AnyCollection<Point> { get }
+    var collection: AnyCollection<(Position, [Point])> { get }
 }
 
 extension PlotModel {
