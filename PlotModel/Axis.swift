@@ -18,3 +18,10 @@ public protocol Axis {
     /// Calculate a position for the given entity.
     var coordinate: (Element) -> Coordinate { get }
 }
+
+/// Axis which does not transform its element when constructing its coordinate.
+public struct DefaultAxis <T> {
+    
+    /// - Returns: Element as coordinate.
+    public var coordinate: (T) -> T = { t in t }
+}
