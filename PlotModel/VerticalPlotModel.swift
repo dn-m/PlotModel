@@ -8,7 +8,5 @@
 
 
 public protocol VerticalPlotModel: PlotModel {
-    
-    /// Determines the way that information is mapped onto the horizontal axis.
-    var horizontalAxis: DefaultAxis<Double> { get }
+    associatedtype VerticalAxis = DefaultAxis<Double>
 }
