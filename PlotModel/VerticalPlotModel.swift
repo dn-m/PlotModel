@@ -8,5 +8,8 @@
 
 
 public protocol VerticalPlotModel: PlotModel {
+    
+    associatedtype Position = HorizontalCoordinate
+    
     var horizontalAxis: DefaultAxis<Double> { get }
 }

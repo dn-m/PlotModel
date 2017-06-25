@@ -7,5 +7,8 @@
 //
 
 public protocol HorizontalPlotModel: PlotModel {
+    
+    associatedtype Position = VerticalCoordinate
+    
     var verticalAxis: DefaultAxis<Double> { get }
 }

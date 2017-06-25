@@ -20,17 +20,20 @@ public protocol PlotModel: AnyCollectionWrapping {
     /// Type that describes the abstract vertical coordinate system of a `PlotView`.
     ///
     /// For example, `Staff` implements this as `StaffSlot`.
-    associatedtype VerticalCoordinate
+    associatedtype VerticalCoordinate: Hashable
     
     /// Type that describes the abstract horizontal coordinate system of a `PlotView`.
-    associatedtype HorizontalCoordinate
+    associatedtype HorizontalCoordinate: Hashable
+    
+    /// Type that describes the coordinates of a given `Point`.
+    associatedtype Position: Hashable
     
     /// Type that converts a given type of musical element to `AbstractVerticalPosition`.
     associatedtype VerticalAxis: Axis
     
     /// Type that converts a given type of musical element to `AbstractHorizontalPosition`.
     associatedtype HorizontalAxis: Axis
-    
+
     /// Determines the way that information is mapped onto the vertical axis.
     var verticalAxis: VerticalAxis { get }
     
@@ -38,7 +41,7 @@ public protocol PlotModel: AnyCollectionWrapping {
     var horizontalAxis: HorizontalAxis { get }
     
     /// Array of points contained herein.
-    var points: [Point] { get }
+    var points: [Position: [Point]] { get }
     
     /// Type-erased view of `points` array.
     var collection: AnyCollection<Point> { get }
@@ -47,7 +50,7 @@ public protocol PlotModel: AnyCollectionWrapping {
 extension PlotModel {
     
     /// Type-erased view of `points` array.
-    public var collection: AnyCollection<Point> {
-        return AnyCollection(points)
+    public var collection: AnyCollection<(Position, [Point])> {
+        return AnyCollection(points.map { $0 })
     }
 }
