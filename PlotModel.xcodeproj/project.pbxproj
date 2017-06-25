@@ -13,6 +13,10 @@
 		075303E71E2AAB1B00457EAD /* PlotModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075303E51E2AAB1B00457EAD /* PlotModel.swift */; };
 		075303E91E2AAB3B00457EAD /* Axis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075303E81E2AAB3B00457EAD /* Axis.swift */; };
 		075303EA1E2AAB3B00457EAD /* Axis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075303E81E2AAB3B00457EAD /* Axis.swift */; };
+		07611D4D1F00328900207E71 /* VerticalPlotModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07611D4C1F00328900207E71 /* VerticalPlotModel.swift */; };
+		07611D4E1F00328900207E71 /* VerticalPlotModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07611D4C1F00328900207E71 /* VerticalPlotModel.swift */; };
+		07611D501F0032F900207E71 /* HorizontalPlotModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07611D4F1F0032F900207E71 /* HorizontalPlotModel.swift */; };
+		07611D511F0032F900207E71 /* HorizontalPlotModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07611D4F1F0032F900207E71 /* HorizontalPlotModel.swift */; };
 		07BCB4A41F001E9300469E9A /* PointModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BCB4A31F001E9300469E9A /* PointModel.swift */; };
 		07BCB4A51F001E9300469E9A /* PointModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BCB4A31F001E9300469E9A /* PointModel.swift */; };
 		954443255095C57ED971857D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC92FD219D2808CC71B2B463 /* Cocoa.framework */; };
@@ -41,6 +45,8 @@
 /* Begin PBXFileReference section */
 		075303E51E2AAB1B00457EAD /* PlotModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlotModel.swift; path = PlotModel/PlotModel.swift; sourceTree = "<group>"; };
 		075303E81E2AAB3B00457EAD /* Axis.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Axis.swift; path = PlotModel/Axis.swift; sourceTree = "<group>"; };
+		07611D4C1F00328900207E71 /* VerticalPlotModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VerticalPlotModel.swift; path = PlotModel/VerticalPlotModel.swift; sourceTree = "<group>"; };
+		07611D4F1F0032F900207E71 /* HorizontalPlotModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HorizontalPlotModel.swift; path = PlotModel/HorizontalPlotModel.swift; sourceTree = "<group>"; };
 		07BCB4A31F001E9300469E9A /* PointModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PointModel.swift; path = PlotModel/PointModel.swift; sourceTree = "<group>"; };
 		07F1779AFF93AFB8A561F67C /* PlotModel macOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PlotModel macOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		211DE3C772C1D0863573B35B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = PlotModel/Info.plist; sourceTree = "<group>"; };
@@ -110,6 +116,8 @@
 			children = (
 				F0B368DCA1EF92366B80385B /* Supporting Files */,
 				075303E51E2AAB1B00457EAD /* PlotModel.swift */,
+				07611D4C1F00328900207E71 /* VerticalPlotModel.swift */,
+				07611D4F1F0032F900207E71 /* HorizontalPlotModel.swift */,
 				07BCB4A31F001E9300469E9A /* PointModel.swift */,
 				075303E81E2AAB3B00457EAD /* Axis.swift */,
 			);
@@ -314,7 +322,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks";
-			showEnvVarsInLog = 1;
 		};
 		C6EA80E536D27D66639472A7 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -329,7 +336,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks";
-			showEnvVarsInLog = 1;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -352,9 +358,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07611D4E1F00328900207E71 /* VerticalPlotModel.swift in Sources */,
 				075303EA1E2AAB3B00457EAD /* Axis.swift in Sources */,
 				07BCB4A51F001E9300469E9A /* PointModel.swift in Sources */,
 				075303E71E2AAB1B00457EAD /* PlotModel.swift in Sources */,
+				07611D511F0032F900207E71 /* HorizontalPlotModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,9 +370,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07611D4D1F00328900207E71 /* VerticalPlotModel.swift in Sources */,
 				075303E91E2AAB3B00457EAD /* Axis.swift in Sources */,
 				07BCB4A41F001E9300469E9A /* PointModel.swift in Sources */,
 				075303E61E2AAB1B00457EAD /* PlotModel.swift in Sources */,
+				07611D501F0032F900207E71 /* HorizontalPlotModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
