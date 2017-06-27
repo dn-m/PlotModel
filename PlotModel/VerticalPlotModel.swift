@@ -6,10 +6,11 @@
 //
 //
 
-
 public protocol VerticalPlotModel: PlotModel {
     
-    associatedtype Position = HorizontalCoordinate
+    /// Type that converts a given type of musical element to `AbstractVerticalPosition`.
+    associatedtype VerticalAxis: Axis
     
-    var horizontalAxis: DefaultAxis<Double> { get }
+    /// Determines the way that information is mapped onto the vertical axis.
+    var verticalAxis: VerticalAxis { get }
 }
