@@ -12,6 +12,7 @@ env:
       SCHEME="PlotModel macOS"
 
 before_script:
+- export GITHUB_ACCESS_TOKEN=$GH_TOKEN
 - if [ -f ./Cartfile ]; then carthage update; fi;
 
 script: travis_retry xcodebuild test
