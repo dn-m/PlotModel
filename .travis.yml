@@ -2,7 +2,7 @@ language: objective-c
 osx_image: xcode8.2
 env:
   global:
-    secure: cEyhk8JBa/vS4QPc8O7OCCr3+gTWTemRt3zMIkc0PXukH3aQW7IXaD2Kqx1VXuD0DVJ+k8mQhbYkA6k+ooenX56Hy/GtxjErNWn/zkZSQAT6u8mcD3jEpGZ98P+j/HsSM9FtTpeVqonucGEmWTZ+9J8ttqQNlETa4taPruE85fSGhCXKLbxyuf+e7lPn/j/Tkmb0PglLl3dJTBov3IWNTuEp3+W1ITxiWf8Fr9bSqcKWzhuM6w1fj4enwnwMIT64fJKofp3FOjtNpT47t/80Tn612S5OyLjCCoZ75cg/xWDE4uPaP3/zxR4zCPsIUwvMUcgaV33qYCtMvBNLoXymbbRoxWgTlU1/fSwc7kzFUM9AT7YpnKGOEu93wW91ajCMGRp/ZpCdJSNyvfPje+qIIeZEZvZcESoAIKfq2hyTh5xcSm4UyJzSmcPqGM1uY3ruMso+tjK/bFf1ryYz4Qs9YJm1GkUj+Zfyt95ywJ3w4TyGleSge/FUopMi8GpMnorCX/fH+fu6bonUkTJiy96p0EjSF4hF/sE7+pwajGOoByUxiZTxseeByT8c0syHJvcBUi8FkdfQvGXzJfMZixUwOJls3aS1AxFfn1UFR/Sim5Hua8wX0vYAFWlKhSTmB/5r3D4OBDh49Mo/XuAnhB1RaQA/M8uIOEcnKYDg3Lz0Y3Q=
+    secure: XGW7EX6Hk84CxfMO6UPtKnWU0qOywLrdd8EwdK71pN7MSWJzzD/hScW4xiMGQPOtrY8+1tBi61+rouHJNCSHymcQ953a1FNUfVPfgpb0cCMqAkseuTUAJ4KtkIgPYLj3uSE3a06XriPs0ZO0TptMyoFBlPhdQjQTfOgr5sJ7Eg58B6b88z8J5kYdyoGL+WmHgYruI/CfbjQFswXRN8P3mEEkqskcE+fOhtUHNY2bD+STUbEPkBcgEeR/tvRvaFNdAm0nk+iZgOOtyQCmqO+OjvMqlW0+cjJG598bNHjRR+0a1hRpEsIDEkR3bTQ4JZZGGnqSDPZ9sMDd8oDNlDUJmCpQqUcLyDaIYmUVMWABsl4ubhVquWhl9hoeVP26Jf7IqMke3crFj51tMHkv+uiRjJyEx4dcUhUbFGmaLooV6zIW4y25kMshTqdeSa9yASpC5KjW9NPdV1Qer6dgUFYg/yFY2W/cPKTEfy4O4blrP6pQYUSC2AOiHum4F+GPgcnURXVglu7uONiKsiw8jpDCjGO0kPgBaVdQhPdWdXWLR79q++KSbdB3+jPi2IqQC+rclzujTVq2wJrwNt74U9rBLsfnkH7EnJdFaCyInsEy0TSYp/2xa0Jfz8qbqv4st8zhDNqUj/mlVtEkF/L9DWdydRD6QEhseVGWF585WLcBZy4=
   matrix:
     - DESTINATION="platform=iOS Simulator,OS=9.3,name=iPad 2"
       SCHEME="PlotModel iOS"
@@ -12,8 +12,8 @@ env:
       SCHEME="PlotModel macOS"
 
 before_script:
-- git config --global user.name "jsbean"
-- git config --global user.email "jbean46@gmail.com"
+- git config --global user.name "Travis CI"
+- git config --global user.email "travis@ci.com"
 - git config credential.helper "store --file=.git/credentials"
 - echo "https://${GH_TOKEN}:@github.com" > .git/credentials
 - if [ -f ./Cartfile ]; then carthage update; fi;
