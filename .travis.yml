@@ -16,7 +16,7 @@ before_script:
 - git config --global user.email "travis@ci.com"
 - git config credential.helper "store --file=.git/credentials"
 - echo "https://${GH_TOKEN}:@github.com" > .git/credentials
-- if [ -f ./Cartfile ]; then carthage update; fi;
+- if [ -f ./Cartfile ]; then carthage update --no-use-binaries; fi;
 
 script: travis_retry xcodebuild test
   -project PlotModel.xcodeproj
