@@ -19,6 +19,14 @@
 		07611D511F0032F900207E71 /* HorizontalPlotModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07611D4F1F0032F900207E71 /* HorizontalPlotModel.swift */; };
 		07731EC71F0689CE00BDDCD6 /* PlotModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63A56859FEE30A286CABDA23 /* PlotModel.framework */; };
 		07731EC81F0689DC00BDDCD6 /* PlotModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B4DD33294D828AB5D473F13 /* PlotModel.framework */; };
+		07731ECA1F068A9000BDDCD6 /* DefaultAxis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07731EC91F068A9000BDDCD6 /* DefaultAxis.swift */; };
+		07731ECB1F068A9000BDDCD6 /* DefaultAxis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07731EC91F068A9000BDDCD6 /* DefaultAxis.swift */; };
+		07731ECD1F068AC000BDDCD6 /* DefaultVerticalPlotModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07731ECC1F068AC000BDDCD6 /* DefaultVerticalPlotModel.swift */; };
+		07731ECE1F068AC000BDDCD6 /* DefaultVerticalPlotModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07731ECC1F068AC000BDDCD6 /* DefaultVerticalPlotModel.swift */; };
+		07731ED01F068AF200BDDCD6 /* DefaultVerticalPointModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07731ECF1F068AF200BDDCD6 /* DefaultVerticalPointModel.swift */; };
+		07731ED11F068AF200BDDCD6 /* DefaultVerticalPointModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07731ECF1F068AF200BDDCD6 /* DefaultVerticalPointModel.swift */; };
+		07731ED31F068C2F00BDDCD6 /* DefaultVerticalPlotModel.Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07731ED21F068C2F00BDDCD6 /* DefaultVerticalPlotModel.Builder.swift */; };
+		07731ED41F068C2F00BDDCD6 /* DefaultVerticalPlotModel.Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07731ED21F068C2F00BDDCD6 /* DefaultVerticalPlotModel.Builder.swift */; };
 		07BCB4A41F001E9300469E9A /* PointModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BCB4A31F001E9300469E9A /* PointModel.swift */; };
 		07BCB4A51F001E9300469E9A /* PointModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BCB4A31F001E9300469E9A /* PointModel.swift */; };
 		954443255095C57ED971857D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC92FD219D2808CC71B2B463 /* Cocoa.framework */; };
@@ -49,6 +57,10 @@
 		075303E81E2AAB3B00457EAD /* Axis.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Axis.swift; path = PlotModel/Axis.swift; sourceTree = "<group>"; };
 		07611D4C1F00328900207E71 /* VerticalPlotModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VerticalPlotModel.swift; path = PlotModel/VerticalPlotModel.swift; sourceTree = "<group>"; };
 		07611D4F1F0032F900207E71 /* HorizontalPlotModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HorizontalPlotModel.swift; path = PlotModel/HorizontalPlotModel.swift; sourceTree = "<group>"; };
+		07731EC91F068A9000BDDCD6 /* DefaultAxis.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DefaultAxis.swift; path = PlotModel/DefaultAxis.swift; sourceTree = "<group>"; };
+		07731ECC1F068AC000BDDCD6 /* DefaultVerticalPlotModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DefaultVerticalPlotModel.swift; path = PlotModel/DefaultVerticalPlotModel.swift; sourceTree = "<group>"; };
+		07731ECF1F068AF200BDDCD6 /* DefaultVerticalPointModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DefaultVerticalPointModel.swift; path = PlotModel/DefaultVerticalPointModel.swift; sourceTree = "<group>"; };
+		07731ED21F068C2F00BDDCD6 /* DefaultVerticalPlotModel.Builder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DefaultVerticalPlotModel.Builder.swift; path = PlotModel/DefaultVerticalPlotModel.Builder.swift; sourceTree = "<group>"; };
 		07BCB4A31F001E9300469E9A /* PointModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PointModel.swift; path = PlotModel/PointModel.swift; sourceTree = "<group>"; };
 		07F1779AFF93AFB8A561F67C /* PlotModel macOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PlotModel macOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		211DE3C772C1D0863573B35B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = PlotModel/Info.plist; sourceTree = "<group>"; };
@@ -124,6 +136,10 @@
 				07611D4F1F0032F900207E71 /* HorizontalPlotModel.swift */,
 				07BCB4A31F001E9300469E9A /* PointModel.swift */,
 				075303E81E2AAB3B00457EAD /* Axis.swift */,
+				07731EC91F068A9000BDDCD6 /* DefaultAxis.swift */,
+				07731ECC1F068AC000BDDCD6 /* DefaultVerticalPlotModel.swift */,
+				07731ECF1F068AF200BDDCD6 /* DefaultVerticalPointModel.swift */,
+				07731ED21F068C2F00BDDCD6 /* DefaultVerticalPlotModel.Builder.swift */,
 			);
 			name = PlotModel;
 			sourceTree = "<group>";
@@ -364,6 +380,10 @@
 			files = (
 				07611D4E1F00328900207E71 /* VerticalPlotModel.swift in Sources */,
 				075303EA1E2AAB3B00457EAD /* Axis.swift in Sources */,
+				07731ECE1F068AC000BDDCD6 /* DefaultVerticalPlotModel.swift in Sources */,
+				07731ECB1F068A9000BDDCD6 /* DefaultAxis.swift in Sources */,
+				07731ED11F068AF200BDDCD6 /* DefaultVerticalPointModel.swift in Sources */,
+				07731ED41F068C2F00BDDCD6 /* DefaultVerticalPlotModel.Builder.swift in Sources */,
 				07BCB4A51F001E9300469E9A /* PointModel.swift in Sources */,
 				075303E71E2AAB1B00457EAD /* PlotModel.swift in Sources */,
 				07611D511F0032F900207E71 /* HorizontalPlotModel.swift in Sources */,
@@ -376,6 +396,10 @@
 			files = (
 				07611D4D1F00328900207E71 /* VerticalPlotModel.swift in Sources */,
 				075303E91E2AAB3B00457EAD /* Axis.swift in Sources */,
+				07731ECD1F068AC000BDDCD6 /* DefaultVerticalPlotModel.swift in Sources */,
+				07731ECA1F068A9000BDDCD6 /* DefaultAxis.swift in Sources */,
+				07731ED01F068AF200BDDCD6 /* DefaultVerticalPointModel.swift in Sources */,
+				07731ED31F068C2F00BDDCD6 /* DefaultVerticalPlotModel.Builder.swift in Sources */,
 				07BCB4A41F001E9300469E9A /* PointModel.swift in Sources */,
 				075303E61E2AAB1B00457EAD /* PlotModel.swift in Sources */,
 				07611D501F0032F900207E71 /* HorizontalPlotModel.swift in Sources */,
