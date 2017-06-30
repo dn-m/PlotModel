@@ -17,6 +17,8 @@
 		07611D4E1F00328900207E71 /* VerticalPlotModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07611D4C1F00328900207E71 /* VerticalPlotModel.swift */; };
 		07611D501F0032F900207E71 /* HorizontalPlotModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07611D4F1F0032F900207E71 /* HorizontalPlotModel.swift */; };
 		07611D511F0032F900207E71 /* HorizontalPlotModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07611D4F1F0032F900207E71 /* HorizontalPlotModel.swift */; };
+		07731EC71F0689CE00BDDCD6 /* PlotModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63A56859FEE30A286CABDA23 /* PlotModel.framework */; };
+		07731EC81F0689DC00BDDCD6 /* PlotModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B4DD33294D828AB5D473F13 /* PlotModel.framework */; };
 		07BCB4A41F001E9300469E9A /* PointModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BCB4A31F001E9300469E9A /* PointModel.swift */; };
 		07BCB4A51F001E9300469E9A /* PointModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BCB4A31F001E9300469E9A /* PointModel.swift */; };
 		954443255095C57ED971857D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC92FD219D2808CC71B2B463 /* Cocoa.framework */; };
@@ -81,6 +83,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00FF34CB029F4712369FF7FF /* Foundation.framework in Frameworks */,
+				07731EC71F0689CE00BDDCD6 /* PlotModel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +92,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				954443255095C57ED971857D /* Cocoa.framework in Frameworks */,
+				07731EC81F0689DC00BDDCD6 /* PlotModel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

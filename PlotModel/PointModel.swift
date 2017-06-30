@@ -26,13 +26,4 @@ public protocol PointModel {
     
     /// Type that converts a given type of musical element to `AbstractHorizontalPosition`.
     associatedtype HorizontalAxis: Axis
-    
-    // TODO: These seem way too musical to be here.
-    /// Symbolic connection point for stems.
-    func stemConnectionPoint(from direction: VerticalDirection, axis: VerticalAxis)
-        -> VerticalCoordinate?
-    
-    /// Symbolic connection point for slurs.
-    func slurConnectionPoint(from direction: VerticalDirection, axis: VerticalAxis)
-        -> VerticalCoordinate?
 }
