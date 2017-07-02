@@ -14,21 +14,22 @@ public protocol PointModel {
     
     /// The thing the needs to be converted into vertical dimension
     associatedtype Entity
-//    
-//    /// For example, `Staff` implements this as `StaffSlot`.
-//    associatedtype VerticalCoordinate
-//    
-//    /// Type that describes the abstract horizontal coordinate system of a `PlotView`.
-//    associatedtype HorizontalCoordinate
-//    
-//    /// Type that converts a given type of musical element to `AbstractVerticalPosition`.
-//    associatedtype VerticalAxis: Axis
-//    
-//    /// Type that converts a given type of musical element to `AbstractHorizontalPosition`.
-//    associatedtype HorizontalAxis: Axis
 }
 
-public protocol VerticalPointModel {
-    
-    
-}
+//public protocol VerticalPointModel {
+//
+//    /// Type that converts a given type of musical element to `AbstractVerticalPosition`.
+//    associatedtype VerticalAxis: Axis
+//
+//    /// Determines the way that information is mapped onto the vertical axis.
+//    var axis: VerticalAxis { get }
+//}
+//
+//public protocol HorizontalPointModel {
+//
+//    /// Type that converts a given type of musical element to `AbstractHorizontalPosition`.
+//    associatedtype HorizontalAxis: Axis
+//
+//    /// Determines the way that information is mapped onto the horizontal axis.
+//    var axis: HorizontalAxis { get }
+//}

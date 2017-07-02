@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		00FF34CB029F4712369FF7FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4D19EA433F9C45F89E0ABA /* Foundation.framework */; };
 		01235498B63E77822E436EB3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC92FD219D2808CC71B2B463 /* Cocoa.framework */; };
+		074A841D1F0942AD007C612B /* PlotModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074A841C1F0942AD007C612B /* PlotModelTests.swift */; };
+		074A841E1F0942AD007C612B /* PlotModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074A841C1F0942AD007C612B /* PlotModelTests.swift */; };
 		075303E61E2AAB1B00457EAD /* PlotModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075303E51E2AAB1B00457EAD /* PlotModel.swift */; };
 		075303E71E2AAB1B00457EAD /* PlotModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075303E51E2AAB1B00457EAD /* PlotModel.swift */; };
 		075303E91E2AAB3B00457EAD /* Axis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075303E81E2AAB3B00457EAD /* Axis.swift */; };
@@ -53,6 +55,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		074A841C1F0942AD007C612B /* PlotModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlotModelTests.swift; path = PlotModelTests/PlotModelTests.swift; sourceTree = "<group>"; };
 		075303E51E2AAB1B00457EAD /* PlotModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlotModel.swift; path = PlotModel/PlotModel.swift; sourceTree = "<group>"; };
 		075303E81E2AAB3B00457EAD /* Axis.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Axis.swift; path = PlotModel/Axis.swift; sourceTree = "<group>"; };
 		07611D4C1F00328900207E71 /* VerticalPlotModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VerticalPlotModel.swift; path = PlotModel/VerticalPlotModel.swift; sourceTree = "<group>"; };
@@ -115,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				86A188A4FC544754AC4987DA /* Supporting Files */,
+				074A841C1F0942AD007C612B /* PlotModelTests.swift */,
 			);
 			name = PlotModelTests;
 			sourceTree = "<group>";
@@ -303,6 +307,12 @@
 					2B961475A995F6564AD04761 = {
 						LastSwiftMigration = 0820;
 					};
+					36A16952A5E8433CE8EAEE32 = {
+						LastSwiftMigration = 0830;
+					};
+					73BD0564CB742421488A2EFA = {
+						LastSwiftMigration = 0830;
+					};
 					C4D143BB8F82B657B438FC48 = {
 						LastSwiftMigration = 0820;
 					};
@@ -364,6 +374,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				074A841D1F0942AD007C612B /* PlotModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,6 +382,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				074A841E1F0942AD007C612B /* PlotModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,6 +474,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -473,6 +486,8 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -513,6 +528,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -524,6 +540,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -612,6 +629,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -623,6 +641,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -630,6 +649,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -641,6 +661,8 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
