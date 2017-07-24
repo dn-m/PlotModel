@@ -25,7 +25,7 @@ extension DefaultVerticalPlotModel {
         }
         
         public func build() -> DefaultVerticalPlotModel {
-            return DefaultVerticalPlotModel(points: points)
+            return DefaultVerticalPlotModel(points)
         }
     }
 }
