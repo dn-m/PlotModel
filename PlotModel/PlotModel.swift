@@ -9,7 +9,7 @@
 import Collections
 
 /// Model represented by a `PlotView`.
-public protocol PlotModel: AnyCollectionWrapping {
+public protocol PlotModel: CollectionWrapping {
 
     /// Model of a single point within a `PlotModel`.
     associatedtype Point: PointModel
@@ -21,16 +21,5 @@ public protocol PlotModel: AnyCollectionWrapping {
     associatedtype Position: Hashable
     
     /// Array of points contained herein.
-    var points: [Position: [Point]] { get }
-    
-    /// Type-erased view of `points` array.
-    var collection: AnyCollection<(Position, [Point])> { get }
-}
-
-extension PlotModel {
-    
-    /// Type-erased view of `points` array.
-    public var collection: AnyCollection<(Position, [Point])> {
-        return AnyCollection(points.map { $0 })
-    }
+    var base: [Position: [Point]] { get }
 }
