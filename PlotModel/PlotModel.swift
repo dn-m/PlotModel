@@ -21,5 +21,14 @@ public protocol PlotModel: CollectionWrapping {
     associatedtype Position: Hashable
     
     /// Array of points contained herein.
-    var base: [Position: [Point]] { get }
+    var points: [Position: [Point]] { get }
+}
+
+extension PlotModel {
+
+    // MARK: - CollectionWrapping
+
+    public var base: [Position: [Point]] {
+        return points
+    }
 }
